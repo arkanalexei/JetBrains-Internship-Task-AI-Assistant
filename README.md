@@ -71,6 +71,8 @@ Backend defaults to `http://localhost:8000` when run with uvicorn.
 ### Required backend environment variables (`server/.env`)
 
 ```bash
+OPENAI_KEY=
+
 AZURE_OPENAI_KEY_LLM=
 AZURE_API_VERSION_LLM=
 AZURE_OPENAI_ENDPOINT_LLM=
@@ -136,11 +138,6 @@ From prior production-oriented work on related compliance systems:
 
 This repository focuses on code structure and reproducible architecture rather than exposing proprietary datasets.
 
-## How This Demonstrates Fit for the Internship
-
-- **AI tool usage:** LangChain orchestration, retriever composition, prompt design, and LLM integration.
-- **Code quality:** modular backend layering (`chain`, `retriever`, `database`, `constant`) and clean frontend separation.
-- **Clarity of approach:** explicit quality-vs-speed design, documented setup, and transparent trade-offs.
 
 ## Links
 
@@ -150,4 +147,3 @@ This repository focuses on code structure and reproducible architecture rather t
 ## Notes
 
 - Some files in `server/scraping/` and notebooks are research/ingestion artifacts.
-- This submission emphasizes architecture, reasoning, and implementation quality over production hardening.
